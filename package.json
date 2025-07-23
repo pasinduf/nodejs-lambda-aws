@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-lambda-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js",
+    "build": "bestzip lambda-deployment.zip index.js node_modules",
+    "deploy": "aws lambda update-function-code --function-name nodejs-lambda-test --zip-file fileb://lambda-deployment.zip",
+    "clean": "del lambda-deployment.zip"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.119",
+    "@types/node": "^18.19.0",
+    "bestzip": "^2.2.1"
+  }
+}

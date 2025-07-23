@@ -8,7 +8,7 @@ exports.handler = async (event, context) => {
          "Access-Control-Allow-Origin": "*",
        },
        body: JSON.stringify({
-         message: "Hello from nodejs Lambda 2025!!",
+         message: "Hello from nodejs Lambda!!",
          timestamp: new Date().toISOString(),
          event: event,
        }),

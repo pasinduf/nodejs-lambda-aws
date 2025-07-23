@@ -16,3 +16,6 @@ aws lambda create-function
   aws lambda update-function-code
   --function-name {name}
   --zip-file fileb://{zippedFileName}.zip 
+
+  or
+  run 'npm run deploy'

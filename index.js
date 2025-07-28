@@ -8,9 +8,9 @@ exports.handler = async (event, context) => {
          "Access-Control-Allow-Origin": "*",
        },
        body: JSON.stringify({
-         message: "Hello from nodejs Lambda!!",
+         message: "Hello from nodejs Lambda with api gateway",
          timestamp: new Date().toISOString(),
-         event: event,
+         event,
        }),
      };
      return response;
